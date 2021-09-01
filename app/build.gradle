@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 31
+    //buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.androidyuan.aesjniencrypt"
         minSdkVersion 21
@@ -41,7 +41,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation 'com.android.support:appcompat-v7:25.0.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation project(':aesjni')
 
 
@@ -49,6 +49,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
     // Required for instrumented tests
-    testImplementation 'com.android.support:support-annotations:24.0.0'
+    testImplementation 'com.android.support:support-annotations:28.0.0'
     testImplementation 'com.android.support.test:runner:0.5'
 }
